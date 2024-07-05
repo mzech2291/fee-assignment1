@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Review</title>
+</head>
+<body>
+    <div>
+    
+        <table><td><img src="https://img.freepik.com/free-psd/realistic-books-illustration_23-2150583553.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1720051200&semt=ais_user" height="100" alt="logo" height="100" alt="logo"></td>
+            <td>
+            <h1><u>The Official Book Store</u></h1></td></table></div>
+     
+    <nav>
+     <center> <a href="./index.html">Home</a> | <a href="./review.html">Reviews</a></a></center>
+    </nav>
+</div><br>
+    <main>
+        <center><h2>Review Submission Form</h2>
+        <form action="submit_review.php" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+                <input id="name" type="text", name="Name">
+                <br>
+                <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="book">Name of Book:</label>
+                <input id="book" type="text", name="Book">
+                <br><br>
+
+            <label for="genre">Genre:</label>
+            <select id="genre" name="genre" required>
+                <option value="select">select</option>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="mystery">Horror</option>
+                <option value="fantasy">Romance</option>
+                <option value="romance">Mystery</option>
+                <option value="sci-fi">Sci-Fi</option>
+            </select><br><br>
+
+            <label for="rating">rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="1">&#9733;</option>
+                <option value="2">&#9733; &#9733;</option>
+                <option value="3">&#9733; &#9733; &#9733;</option>
+                <option value="4">&#9733; &#9733; &#9733; &#9733;</option>
+                <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
+            </select><br><br>
+
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" rows="4" required></textarea><br>
+            <button type="submit">Submit Review</button>
+            <button type="reset">reset Review</button>
+        </form></center>
+    </main>
+    <br>
+    <br>
+    <footer><center>
+        <p>&copy; The Official Book Store.</p>
+    </center>
+    </footer>
+</body>
+</html>
